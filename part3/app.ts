@@ -82,3 +82,12 @@ function placeOrder(order:number,callback:(amount:number)=>void):void{
 placeOrder(10,(amount)=>{
     console.log(amount);
 });
+
+// rest parameter
+
+function total(...arr:number[]){
+    let ans = 0;
+    arr.forEach((val)=>ans = ans+val);
+    console.log(ans);
+}
+total(2,3,1,4,123,1,12,10);

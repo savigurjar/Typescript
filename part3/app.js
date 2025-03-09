@@ -52,3 +52,10 @@ function placeOrder(order, callback) {
 placeOrder(10, (amount) => {
     console.log(amount);
 });
+// rest parameter
+function total(...arr) {
+    let ans = 0;
+    arr.forEach((val) => ans = ans + val);
+    console.log(ans);
+}
+total(2, 3, 1, 4, 123, 1, 12, 10);
